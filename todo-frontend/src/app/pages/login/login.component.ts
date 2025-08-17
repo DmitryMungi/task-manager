@@ -36,7 +36,7 @@ export class LoginComponent {
         this.router.navigate(['/todos']);
       },
       error: (err): void => {
-        this.error = err.error?.message || 'Ошибка входа';
+        this.error.set(err.error?.message || 'Ошибка входа');
       }
     })
   }
