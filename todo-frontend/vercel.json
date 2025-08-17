@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "todo-frontend",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/todo-frontend"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/todo-frontend",
+  "installCommand": "npm install",
+  "framework": "angular"
+}

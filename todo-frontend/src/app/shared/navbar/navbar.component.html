@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" class="mat-elevation-z2">
+      <span>
+        <mat-icon>check_circle</mat-icon>
+        ToDo App
+      </span>
+      <span class="spacer"></span>
+
+      @if (isAuthenticated()) {
+        <span class="user-info">
+        <mat-icon>account_circle</mat-icon>
+          {{ getUsername() }}
+        </span>
+        <button mat-button color="accent" (click)="logout()">Выйти</button>
+
+      } @else { 
+        <a mat-button routerLink="/login">Вход</a>
+        <a mat-button routerLink="/register">Регистрация</a>
+      }
+
+      <!-- <ng-container *ngIf="isAuthenticated(); else guestLinks">
+        <span class="user-info">
+          <mat-icon>account_circle</mat-icon>
+          {{ getUsername() }}
+        </span>
+        <button mat-button color="accent" (click)="logout()">Выйти</button>
+      </ng-container> -->
+
+      <!-- <ng-template #guestLinks>
+        <a mat-button routerLink="/login">Вход</a>
+        <a mat-button routerLink="/register">Регистрация</a>
+      </ng-template> -->
+    </mat-toolbar>

@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  # MongoDB для разработки
+  mongodb:
+    image: mongo:7-jammy
+    container_name: todo-mongodb-dev
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_DATABASE: todo-app
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_dev_data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - todo-network
+
+  # Backend для разработки (с hot reload)
+  backend:
+    build:
+      context: ./todo-backend
+      dockerfile: Dockerfile
+    container_name: todo-backend-dev
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      MONGODB_URL: mongodb://admin:password123@mongodb:27017/todo-app?authSource=admin
+      JWT_SECRET: ${JWT_SECRET:-dev_secret_key}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-1h}
+      JWT_REFRESH_EXPIRES_IN: ${JWT_REFRESH_EXPIRES_IN:-7d}
+      CORS_ORIGIN: http://localhost:4200
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    networks:
+      - todo-network
+    volumes:
+      - ./todo-backend:/app
+      - /app/node_modules
+    command: npm run dev
+
+# Volumes для разработки
+volumes:
+  mongodb_dev_data:
+    driver: local
+
+# Сеть
+networks:
+  todo-network:
+    driver: bridge

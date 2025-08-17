@@ -1,0 +1,36 @@
+<div class="register-container">
+    <h2>Регистрация</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Имя пользователя</mat-label>
+        <input matInput formControlName="username" required />
+
+        @if (form.get('username')?.invalid && form.get('username')?.touched) {
+            <mat-error>
+                Укажите имя
+            </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Пароль</mat-label>
+        <input matInput type="password" formControlName="password" required />
+
+        @if (form.get('password')?.invalid && form.get('password')?.touched) {
+            <mat-error>
+                Укажите пароль (мин. 4 символа)
+            </mat-error>
+        }
+      </mat-form-field>
+
+      @if (error()) {
+        <div class="error-msg">{{ error() }}</div>
+      }
+
+      <button mat-flat-button color="primary" type="submit" [disabled]="form.invalid">
+        Зарегистрироваться
+      </button>
+    </form>
+  </div>
+
+  <p class="to-login">Уже есть аккаунт? <button routerLink="/login" mat-button>Войти</button></p>

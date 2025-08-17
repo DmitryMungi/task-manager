@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Мои задачи</h2>
+
+    <form [formGroup]="form" (ngSubmit)="addTodo()" class="todo-form">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Новая задача</mat-label>
+          <input matInput formControlName="title" placeholder="Введите задачу" />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+          Добавить
+        </button>
+    </form>
+
+    @if (loading()) {
+        <div>Загрузка...</div>
+    } @else {
+
+        @if (todos().length) {
+            <div class="todo-list">
+                @for (todo of todos(); track todo._id) {
+                    <app-todo-item [todo]="todo" (removeEmit)="deleteTodo($event)" (compliteEmit)="toggleComplete($event)"></app-todo-item>
+                }
+            </div>
+        } @else { 
+            <div>
+                задач пока нет
+            </div>
+        }
+    }
+</div>

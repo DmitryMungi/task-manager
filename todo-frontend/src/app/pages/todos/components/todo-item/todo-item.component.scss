@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+    background-color: var(--primary);
+    min-height: 40px;
+    padding: 8px;
+}
+
+.done {
+    color: var(--positive);
+}
+
+.in-progress {
+    color: var(--medium);
+}
+
+.title {
+    flex-grow: 1;
+}
+

@@ -1,0 +1,22 @@
+<div class="login-container">
+  <h2>Вход</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="full-width">
+      <mat-label>Логин</mat-label>
+      <input matInput formControlName="username" required>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Пароль</mat-label>
+      <input matInput type="password" formControlName="password" required>
+    </mat-form-field>
+
+    @if (error()) {
+      <div class="error">{{ error() }}</div>
+    }
+
+    <button mat-flat-button color="primary" type="submit"  [disabled]="form.invalid">Войти</button>
+  </form>
+</div>
+
+<p class="to-register">Уже есть аккаунт? <button routerLink="/register" mat-button>Зарегистрируйтесь</button></p>

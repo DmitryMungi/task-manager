@@ -1,0 +1,340 @@
+----------/////////////////// == БАЗА ЗНАНИЙ == ///////////////////////----------------------
+
+JS 
+
+ТИПЫ - https://learn.javascript.ru/types
+
+ПРЕОБРАЗОВАНИЕ ТИПОВ - https://learn.javascript.ru/type-conversions
+
+РАЗНИЦА МЕЖДУ ЗНАЧЕНИЯМИ И ССЫЛКАМИ В JAVASCRIPT - https://dmitripavlutin.com/value-vs-reference-javascript/
+
+МЕТОДЫ ПРИМИТИВОВ - https://learn.javascript.ru/primitives-methods
+
+WHILE - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
+
+FOR - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+
+FOR...IN - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+
+FOR...OF - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+
+IF...ELSE - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+
+SWITCH - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+
+TERNARY - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+
+NULLISH COALESCING OPERATOR (??) - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
+
+NULLISH COALESCING ASSIGNMENT (??=) - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment
+
+ЗАМЫКАНИЕ - https://learn.javascript.ru/closure
+JavaScript: область видимости простыми словами - https://habr.com/ru/articles/517338/
+
+Temporal Dead Zone - https://dmenshikov.com/2017-07-13-temporal-dead-zone/
+
+hoisting - https://frontend-stuff.com/blog/hoisting/
+
+&& and ||  - https://mariusschulz.com/blog/the-and-and-or-operators-in-javascript
+
+function expression vs function declaration - https://learn.javascript.ru/function-expressions#function-expression-v-sravnenii-s-function-declaration
+
+стрелочные функции - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+Флаги и дескрипторы свойств - https://learn.javascript.ru/property-descriptors
+
+get/set - https://learn.javascript.ru/property-accessors
+
+Map и Set - https://learn.javascript.ru/map-set
+
+WeakMap и WeakSet - https://learn.javascript.ru/weakmap-weakset
+
+spread/rest оператор - https://learn.javascript.ru/rest-parameters-spread-operator
+
+Date - https://learn.javascript.ru/date
+
+Proxy и Reflect - https://learn.javascript.ru/proxy#znachenie-po-umolchaniyu-s-lovushkoy-get
+
+Intl - https://learn.javascript.ru/intl
+
+Регулярные выражения - https://learn.javascript.ru/regular-expressions
+
+работа с this: https://learn.javascript.ru/object-methods ,
+call - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+apply - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
+bind - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+
+timers - https://learn.javascript.ru/settimeout-setinterval
+Промисы - https://learn.javascript.ru/promise-basics
+Async/await - https://learn.javascript.ru/async-await
+
+Генераторы - https://learn.javascript.ru/generators
+try..catch - https://learn.javascript.ru/try-catch
+throw - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
+
+методы массивов - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+Прототипы, наследование - https://learn.javascript.ru/prototypes
+Классы - https://learn.javascript.ru/classes 
+
+typeof и instanceof (особенности)
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+https://learn.javascript.ru/instanceof
+
+модули, динамический импорт
+https://learn.javascript.ru/modules
+
+сборщик мусора
+https://learn.javascript.ru/garbage-collection
+
+////////////////////////////////////////////////////////////////////////////////////////////
+############################################################################################
+////////////// -------- TS ------------- ///////////////////////
+
+типы
+https://www.typescriptlang.org/docs/handbook/basic-types.html
+
+модификаторы доступа/модификатор readonly
+https://scriptdev.ru/guide/023/
+https://scriptdev.ru/guide/027/
+
+Наследование
+https://metanit.com/web/typescript/3.2.php
+
+перегрузка
+https://nuancesprog.ru/p/13747/
+
+Абстрактные классы
+https://scriptdev.ru/guide/025/
+
+Interfaces
+https://scriptdev.ru/guide/021/
+
+псевдонимы типа и запросы типа
+https://scriptdev.ru/guide/017/
+
+статические члены класса
+https://metanit.com/web/typescript/3.13.php
+
+декораторы
+https://syntaxerror.ru/decorators-in-typescript/
+
+tsconfig.json
+https://scriptdev.ru/guide/060/
+
+декларации
+https://scriptdev.ru/guide/058/
+
+union, intersection
+https://scriptdev.ru/guide/016/#_1
+
+Обобщение 
+https://scriptdev.ru/guide/032/
+
+Utility Types
+https://www.typescriptlang.org/docs/handbook/utility-types.html
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////// -------- DOM -------- /////////////////////////////
+
+фазы событий
+https://learn.javascript.ru/bubbling-and-capturing
+
+создание кастомных событий
+https://learn.javascript.ru/dispatch-events
+
+DOMContentLoaded, load, beforeunload, unload
+https://learn.javascript.ru/onload-ondomcontentloaded
+
+//////////////////////////////////////////////////////////////////
+
+
+//////////////////////-------- RxJs ----------///////////////////
+
+Observable
+https://rxjs.dev/guide/observable
+
+Subject (виды, отличие от Observable)
+https://rxjs.dev/guide/subject
+
+утечка памяти ---
+
+marble диаграммы ----
+
+mergeMap vs switchMap
+https://vdsabev.medium.com/the-simple-difference-between-rxjs-switchmap-and-mergemap-397c311552a5
+
+cold vs hot
+https://medium.com/@aksenovdev/hot-vs-cold-observables-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-4951ee651e4c
+
+мультикастинг
+https://buhtatyalexander90.medium.com/%D0%BC%D0%B0%D0%B3%D0%B8%D1%8F-sharing-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2-%D0%B8-%D0%B8%D1%85-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%B2-rxjs-faed2c866c29
+
+throttleTime vs debounceTime
+https://dev.to/rxjs/debounce-vs-throttle-vs-audit-vs-sample-difference-you-should-know-1f21
+
+forkJoin
+https://www.learnrxjs.io/learn-rxjs/operators/combination/forkjoin
+
+schedulers
+https://rxjs.dev/guide/scheduler
+
+///////////////////////////// -------- Angular ---------- ///////////////////////////////
+
+component vs directive - 
+
+модуль
+https://metanit.com/web/angular2/2.2.php
+
+сервис
+https://angdev.ru/archive/angular9/angular-services/
+
+типы провайдеров
+https://www.tektutorialshub.com/angular/angular-providers/
+
+viewProviders
+https://www.tektutorialshub.com/angular/viewproviders-in-angular/
+
+интерполяция в шаблоне
+https://metanit.com/web/angular2/2.5.php
+
+директивы
+https://angdev.ru/archive/angular9/angular-directives/
+
+инкапсуляция стилей и ng-deep, работа с host
+https://v17.angular.io/guide/view-encapsulation
+https://v17.angular.io/guide/component-styles#deprecated-deep--and-ng-deep
+
+проецирование контента
+https://habr.com/ru/articles/491136/
+
+pipes
+https://angdev.ru/archive/angular9/angular-pipes/
+
+guards
+https://codeburst.io/understanding-angular-guards-347b452e1892
+
+resolvers
+https://v17.angular.io/api/router/Resolve
+
+ng-template и ng-container (TODO)
+
+динамическое создание компонентов
+https://v17.angular.io/guide/dynamic-component-loader
+
+@Input, @Output, @HostBinding, @Hostlistener
+https://v17.angular.io/api/core/Input
+https://v17.angular.io/api/core/Output
+https://v17.angular.io/api/core/HostBinding
+https://v17.angular.io/api/core/HostListener
+
+хуки жизненного цикла
+https://angdev.ru/archive/angular9/component-lifecycle/
+
+стратегия компонента (Default vs OnPush)
+https://v17.angular.io/api/core/ChangeDetectionStrategy
+https://habr.com/ru/companies/tbank/articles/581378/
+
+change detection ---
+зона ---
+
+
+NO_ERRORS_SCHEMA vs CUSTOM_ELEMENTS_SCHEMA
+https://gist.github.com/rajaramtt/d835164bd4fc4227ee403e921e3d4953
+
+ленивая загрузка
+https://blog.bitsrc.io/preloading-strategies-boost-up-angular-app-loading-time-ffb19da63155
+
+принцип разрешения зависимостей
+https://v17.angular.io/guide/hierarchical-dependency-injection
+
+TestBed, testing utils
+https://v17.angular.io/api/core/testing/TestBed
+https://v17.angular.io/guide/testing-utility-apis
+
+https://v17.angular.io/guide/dependency-injection
+
+
+
+
+///////////////// ------------ Сопутствующие технологии ------------ ///////////////////////
+
+http и https
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview
+https://habr.com/ru/articles/188042/
+
+
+cookie, localStorage и sessionStorage
+https://learn.javascript.ru/cookie
+https://learn.javascript.ru/localstorage#demo-localstorage
+
+critical render path (видео-доклад)
+https://habr.com/ru/articles/320430/
+https://www.youtube.com/watch?v=6aNT-ZmY9rU
+
+event loop (видео-доклад)
+https://learn.javascript.ru/event-loop
+https://www.youtube.com/watch?v=cCOL7MC4Pl0
+
+работа с iframe
+https://learn.javascript.ru/cross-window-communication
+
+CI/CD
+https://habr.com/ru/companies/otus/articles/515078/
+
+OOP
+https://habr.com/ru/articles/463125/
+
+SOLID
+https://web-creator.ru/articles/solid
+
+карирование и мемоизация
+https://web-creator.ru/articles/solid
+
+работа с websocket
+https://learn.javascript.ru/websocket
+
+работа с webworker/sharedworker/serviceworker
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API
+https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker
+https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker
+
+CSRF, XSS, CORS, CSP
+https://dev.to/maleta/cors-xss-and-csrf-with-examples-in-10-minutes-35k3
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP
+
+auth
+https://habr.com/ru/companies/dataart/articles/262817/
+
+алгоритмическая сложность
+https://habr.com/ru/articles/188010/
+
+структуры данных
+https://medium.com/nuances-of-programming/%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%BD%D0%B5%D0%BE%D0%B1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE-%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%D1%83-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D1%83-235d4315e5b9
+
+паттерны проектирования
+https://refactoring.guru/ru/design-patterns
+
+
+
+принципы разработки
+https://habr.com/ru/companies/itelma/articles/546372/
+
+virtual DOM vs incremental DOM
+https://blog.nrwl.io/understanding-angular-ivy-incremental-dom-and-virtual-dom-243be844bf36
+
+веб-компоненты
+https://learn.javascript.ru/web-components
+
+
+
+
+
+
+
+
+
+
